@@ -1,0 +1,37 @@
+main {display: flex; flex-direction: column; justify-content: center;}
+#sectionGrid {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: rgb(60, 141, 188);
+}
+section h3 {font-size: 2em; margin-bottom: 0.2em;}
+section h3 a {text-decoration: none;}
+section h3 a i {color: inherit;}
+.figure-grid {display: grid; grid-template-columns: repeat(3, auto); justify-content: center; align-items: center;}
+.figure-hyperlink {margin: 5px; width: 400px; text-decoration: none;}
+figure {background-color: #222; width: 400px;}
+figure img {width: inherit;}
+figcaption {padding: 0.2em; font-size: 1em; width: inherit;}
+@media screen and (max-width: 1340px) {
+  .figure-grid {grid-template-columns: repeat(2, auto);}
+}
+@media screen and (max-width: 900px) {
+  .figure-grid {grid-template-columns: repeat(1, auto);}
+}
+@media screen and (max-width: 500px) {
+  section {padding: 2vw;}
+  section h3 {font-size: 1.5em;}
+  .figure-grid {display: flex; flex-direction: column; width: 80vw; justify-content: center; align-items: center;}
+  .figure-hyperlink {width: 80vw; margin: 5px 0;}
+  figure {width: 80vw;}
+  figure img {width: inherit;}
+  figcaption {width: inherit;}
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="/css/umbrella.css" />
+  <link rel="stylesheet" type="text/css" href="/css/{{ page.stylesheet }}" />
+  <link rel="stylesheet" type="text/css" href="/css/scrollbar.css" />
+  <!-- <link rel="canonical" href="https://fortierpm.github.io/" /> -->
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="{{ page.keywords }}" />
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="author" content="Peter Fortier" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+</head>
+
+<body>
+
+{% include header.html %}
+
+{{ content }}
+  
+{% include footer.html %}
+  
+</body>
+  
+</html>

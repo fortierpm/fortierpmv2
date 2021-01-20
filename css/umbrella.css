@@ -1,0 +1,165 @@
+/* umbrella.css should contain the uniform sitewide styles for all public pages */
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: Arial;
+  color: #FFF;
+}
+body {
+  width: 100vw;
+  font-size: 16px;
+  background-color: #000;
+  overflow: overlay;
+  overflow-x: hidden;
+}
+main {
+  margin-top: 3em;
+}
+@media screen and (max-width: 700px) {
+  main {margin-top: 4em;}
+}
+@media screen and (max-width: 500px) {
+  main {margin-top: 7.3em;}
+}
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+#pageHeadings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#pageHeadings h1 {
+  font-size: 3em;
+  margin: 0.4em 0.4em 0.4em 0.8em;
+}
+#pageHeadings h2 {
+  font-size: 1.5em;
+  margin: 0.8em 1.6em 0.8em 0.8em;
+  color: rgb(60, 141, 188);
+}
+@media screen and (max-width: 700px) {
+  #pageHeadings {flex-direction: column; margin: 1em 0;}
+  #pageHeadings > h1 {margin: 0 0.4em; text-align: center;}
+  #pageHeadings > h2 {margin: 0 0.8em; text-align: center;}
+}
+@media screen and (max-width: 500px) {
+  #pageHeadings > h1 {font-size: 2em; margin: 0;}
+  #pageHeadings > h2 {font-size: 1em; margin: 0;}
+}
+abbr {
+  text-decoration: none;
+}
+cite {
+  font-style: normal;
+}
+
+/* Header Styles */
+#siteHeader {
+  width: 100vw;
+  height: 3em;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+#logoIcon {
+  width: auto;
+  height: 2em;
+  margin: 0 1.5em;
+  object-fit: cover;
+}
+#siteNav ul {
+  list-style: none;
+  margin: 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font: 1em Arial;
+  text-transform: uppercase;
+}
+#siteNav li {margin: 0 0.5em;}
+#siteNav a {text-decoration: none;}
+#siteNav a:hover {color: rgb(60, 141, 188);}
+#siteNav a:active {color: rgb(150, 203, 225);}
+@media screen and (max-width: 700px) {
+  #siteHeader {height: 4em; flex-direction: column;}
+  #siteNav ul {flex-direction: row; margin-bottom: 0.5em;}
+}
+@media screen and (max-width: 500px) {
+  #siteHeader {height: 7em; flex-direction: column; padding-bottom: 0.3em;}
+  #siteNav ul {flex-direction: column; align-items: center;}
+}
+
+/* Footer Styles */
+#siteFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+/* Contact Styles */
+#contactContainer {
+  width: inherit;
+}
+#contactHeadings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#contactHeadings h3 {
+  font-size: 3em;
+  margin: 0.4em 0.4em 0.4em 0.8em;
+}
+#contactHeadings h4 {
+  font-size: 1.5em;
+  margin: 0.8em 1.6em 0.8em 0.8em;
+  color: rgb(60, 141, 188);
+}
+@media screen and (max-width: 700px) {
+  #contactHeadings {flex-direction: column; margin: 1em 0;}
+  #contactHeadings h3 {margin: 0 0.4em; text-align: center;}
+  #contactHeadings h4 {margin: 0 0.8em; text-align: center;}
+}
+@media screen and (max-width: 500px) {
+  #contactHeadings h3 {font-size: 2em; margin: 0;}
+  #contactHeadings h4 {font-size: 1em; margin: 0;}
+}
+#contactList {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font: 1em Arial;
+  text-transform: uppercase;
+  list-style: none;
+}
+#contactList li {margin: 1em 1.25em;}
+#contactList a {text-decoration: none; color: #FFF;}
+#contactList a:hover {color: rgb(60, 141, 188);}
+#contactList a:active {color: rgb(150, 203, 225);}
+/* Copywrite Styles */
+#copywriteContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(60, 141, 188);
+}
+#copywriteContainer p {font: 10pt Arial; margin: 1.5em;}
+
+/* Placeholder Styles */
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh}
+.placeholder p {margin: 1em;}

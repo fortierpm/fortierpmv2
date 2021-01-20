@@ -1,0 +1,55 @@
+#font-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  margin: 1em 0;
+  padding: 1em;
+  width: 96vw;
+  background-color: #111;
+}
+section h3 {
+  font-size: 4em;
+}
+.font-title {
+  font-size: 2em;
+  color: rgb(60, 141, 188);
+}
+section p {
+  font-size: 0.8em;
+}
+
+@font-face {
+  font-family: "AmaticSC";
+  src: url("../fortierpm.github.io/fonts/AmaticSC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#amaticSCText {font-family: "AmaticSC";}
+
+#arialText {font-family: Arial;}
+
+@font-face {
+  font-family: "Barriecito";
+  src: url("../fortierpm.github.io/fonts/Barriecito-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#barriecitoText {font-family: "Barriecito";}
+
+@font-face {
+  font-family: "Ghost Cove";
+  src: url("../fortierpm.github.io/fonts/QG.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#ghostCoveText {font-family: "Ghost Cove";}
+
+@font-face {
+  font-family: "Sacred Geometry";
+  src: url("../fortierpm.github.io/fonts/Sacred_Geometry.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#sacredGeometryText {font-family: "Sacred Geometry";}

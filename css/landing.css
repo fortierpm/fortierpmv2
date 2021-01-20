@@ -1,0 +1,17 @@
+#landing {
+  width: 100vw;
+  height: 56.25vw;
+  background-image: url(https://i.imgur.com/WN2d1i2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: 100vw auto;
+}
+#landingHeadings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 8vw;
+}
+#landingHeadings h1 {width: 40vw; margin-top: 10vw; font-size: 1em;}
+#landingHeadings h2 {width: 40vw; font-size: 0.4em;}

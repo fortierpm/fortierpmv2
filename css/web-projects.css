@@ -1,0 +1,17 @@
+#webProjectsGrid {display: grid; grid-template-columns: repeat(3, auto); justify-content: center; align-items: center;}
+.figure-hyperlink {margin: 10px; width: 400px; text-decoration: none;}
+figure {background-color: rgb(60, 141, 188); box-shadow: 5px 5px 0 0 #222; width: 400px;}
+figure img {width: inherit;}
+figcaption {padding: 0.4em; font-size: 1em; width: inherit;}
+@media screen and (max-width: 1340px) {
+  #webProjectsGrid {grid-template-columns: repeat(2, auto);}
+}
+@media screen and (max-width: 900px) {
+  #webProjectsGrid {grid-template-columns: repeat(1, auto);}
+}
+@media screen and (max-width: 500px) {
+  .figure-hyperlink {width: 85vw;}
+  figure {width: 85vw}
+  figure img {width: inherit;}
+  figcaption {width: inherit;}
+}
